@@ -1,0 +1,159 @@
+.signup{
+    display: grid;
+    place-items: center;
+    height: 100vh;
+    background-color: #dadbd3;
+}
+
+.signup__body{
+    padding: 10px;
+    background-color: #ededed;
+    margin-top: -50px;
+    height: 77vh;
+    width: 26vw;
+    box-shadow: -1px 4px 20px -6px rgba(0,0,0,0.7);
+}
+
+.signup__header, .signup__submit{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0px 30px 0px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.signup__whatsapp__logo{
+    height: 60px;
+    width: 60px;
+    margin-bottom: 10px;
+}
+
+.signup__whatsapp__logo img{
+    height: 100%;
+    width: 100%;
+}
+
+.signup__header__text{
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.signup__text__lower{
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.signup__form__wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    margin-bottom: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 18px;
+}
+
+.signup__form{
+    margin-bottom: 16px;
+    border-bottom: 2px solid #25D366;
+}
+
+.signup__error{
+    color: red;
+    font-size: 11px;
+    font-weight: 700;
+}
+
+.signup__text{
+    padding:  8px;
+    width: 320px;
+    outline:none;
+    border: none;
+    border-width: 0px;
+    background-color: #ededed;
+}
+
+.signup__forms{
+    margin-top: 10px;
+}
+
+.signup__avatar__text{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.signup__userImage{
+    height: 65px;
+    width: 65px;
+}
+
+.signup__userImage img{
+    height: 100%;
+    width: 100%;
+    background-size: cover;
+    border-radius: 50%;
+}
+
+.signup__submit{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 4px;
+    padding: 6px;
+}
+
+.signup__button{
+    width: 80px;
+    height: 50px;
+    box-shadow: 3px 3px rgba(0,0,0,0.1);
+    background-color: #4fce5d;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    font-weight: 600;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.signup__button:hover{
+    font-weight: 500;
+}
+
+.signup__createAccount{
+    font-size: 12px;
+    margin-top: 10px;
+    color: #fff;
+}
+
+@media (max-width: 780px){
+    .signup__body{
+        width: 62vw;
+    }
+}
+
+@media (max-width: 550px){
+    .signup__body{
+        width: 85vw;
+        height: 87vh;
+    }
+    .signup__text{
+        width: 235px;
+    }
+    .signup__header__text{
+        font-size: 19px;
+    }
+    .signup__text__lower{
+        font-size: 14px;
+    }
+    .signup__button{
+        width: 70px;
+        height: 40px;
+        font-size: 15px;
+    }
+    .signup__createAccount{
+        font-size: 10px;
+    }
+}

@@ -1,0 +1,252 @@
+.chat{
+    display: flex;
+    flex-direction: column;
+    flex: 0.70;
+}
+
+.chat__header{
+    display: flex;
+    padding: 20px;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #D8D8D8;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.chat__header__avatar{
+    height: 65px;
+    width: 65px;
+}
+
+.chat__header__avatar img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+}
+
+.chat__header__info{
+    flex: 1;
+    padding-left: 25px;
+}
+
+.chat__header__info > h3{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.chat__header__lastseen{
+    font-size: 14px;
+    margin-top: 4px;
+    color: #909090;
+}
+
+.chat__body{
+    flex: 1;
+    background-image: url("https://user-images.githubusercontent.com/15075759/28719144-86dc0f70-73b1-11e7-911d-60d70fcded21.png");
+    background-repeat: repeat;
+    background-position: center;
+    padding: 30px;
+    overflow-y: scroll;
+}
+
+.chat__body__desc{
+    position: relative;
+    font-size: 16px;
+    padding: 10px;
+    width: fit-content;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: #fff;margin-bottom: 30px;
+}
+
+.chat__currentuser{
+    margin-left: auto;
+    background-color: #33ff77;
+}
+
+.chat__timespan{
+    margin-top: 5px;
+    text-align: right;
+    font-size: 12px;
+    color: #909090;
+}
+
+.chat__username{
+    position: absolute;
+    top: -15px;
+    font-weight: 800;
+    font-size: 13px;
+}
+
+.chat__footer{
+    display: flex;
+    padding: 10px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.chat__footer__form{
+    display: flex;
+    flex: 1;
+    padding-left: 10px;
+    background-color: #fff;
+    padding:8px;
+    border-radius: 20px;
+}
+
+.chat__footer__form > input{
+    flex: 1;
+    padding: 6px;
+    border: none;
+    outline-width: 0px;
+}
+
+.chat__footer__form > button{
+    display: none;
+}
+
+@media (max-width: 751px){
+    .chat{
+        flex: 0.80;
+    }
+    .chat__header{
+        padding: 10px;
+    }
+    .chat__header__avatar{
+        height: 45px;
+        width: 45px;
+    }
+    .chat__header__info{
+        padding-left: 12px;
+    }
+    .chat__header__info > h3{
+        font-size: 19px;
+        font-weight: 600;
+    }
+    .chat__header__lastseen{
+        font-size: 11px;
+        margin-top: 3px;
+    }
+    .chat__body{
+        padding: 20px 12px;
+    }
+    .chat__body__desc{
+        font-size: 14px;
+        padding: 7px;
+        max-width: 260px;
+    }
+    .chat__timespan{
+        margin-top: 3px;
+        font-size: 10px;
+    }
+    .chat__username{
+        top: -11px;
+        font-weight: 700;
+        font-size: 10px;
+    }
+    .chat__footer{
+        padding: 6px;
+    }
+    .chat__footer__form{
+        padding-left: 8px;
+        padding:6px;
+    }
+    .chat__footer__form > input{
+        padding: 6px;
+    }
+
+}
+
+@media (max-width: 507px){
+    .chat__header{
+        padding: 7px;
+    }
+    .chat__header__avatar{
+        height: 37px;
+        width: 37px;
+    }
+    .chat__header__info{
+        padding-left: 9px;
+    }
+    .chat__header__info > h3{
+        font-size: 16px;
+        font-weight: 600;
+    }
+    .chat__header__lastseen{
+        font-size: 8px;
+    }
+    .chat__body{
+        padding: 16px 8px;
+    }
+    .chat__body__desc{
+        font-size: 13px;
+        padding: 5px;
+        max-width: 150px;
+    }
+    .chat__timespan{
+        font-size: 8px;
+    }
+    .chat__username{
+        top: -9px;
+        font-weight: 600;
+        font-size: 8px;
+    }
+    .chat__footer{
+        padding: 3px;
+    }
+    .chat__footer__form > input{
+        padding: 4px;
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 450px) {
+    .chat{
+        flex: 0.90;
+    }
+    .chat__body__desc{
+        font-size: 11px;
+        padding: 5px;
+        max-width: 160px;
+    }
+    .chat__header{
+        padding: 12px 6px;
+    }
+    .chat__header__avatar{
+        height: 30px;
+        width: 30px;
+    }
+    .chat__header__info{
+        padding-left: 6px;
+    }
+    .chat__header__info > h3{
+        font-size: 14px;
+        font-weight: 600;
+    }
+    .chat__header__lastseen{
+        font-size: 7px;
+    }
+    
+}
+
+@media (max-width: 380px){
+    .chat__header__info > h3{
+        font-size: 11px;
+        font-weight: 600;
+    }
+    .chat__header__avatar{
+        height: 24px;
+        width: 24px;
+    }
+    .chat__header__lastseen{
+        font-size: 6px;
+    }
+    .chat__body__desc{
+        font-size: 11px;
+        padding: 6px;
+        max-width: 140px;
+    }
+    .chat__timespan{
+        font-size: 6px;
+    }
+}
